@@ -14,9 +14,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16.8.x'
+
       - name: Install packages
         run: npm ci
       - name: Run ESLint
         run: npm run ci:lint
       - name: Run Tests
         run: npm run ci:test
+      - name: Bundle and Output
+        run: npm run build
