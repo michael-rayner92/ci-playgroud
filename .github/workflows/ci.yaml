@@ -23,3 +23,5 @@ jobs:
         run: npm run ci:test
       - name: Bundle and Output
         run: npm run build --if-present
+      - name: Lighthouse Benchmarks
+        run: npm run ci:lighthouse
