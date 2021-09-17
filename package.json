@@ -6,10 +6,11 @@
   "scripts": {
     "develop": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "lint": "eslint . --fix",
+    "lint": "eslint ./src --fix",
     "test": "jest --watch",
-    "ci:lint": "eslint .",
-    "ci:test": "jest --ci"
+    "ci:lint": "eslint ./src",
+    "ci:test": "jest --ci",
+    "ci:lighthouse": "lhci autorun"
   },
   "keywords": [],
   "author": "Michael Rayner",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
+    "@lhci/cli": "^0.8.1",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
