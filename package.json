@@ -6,9 +6,9 @@
   "scripts": {
     "develop": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "lint": "eslint . --fix",
+    "lint": "eslint ./src --fix",
     "test": "jest --watch",
-    "ci:lint": "eslint .",
+    "ci:lint": "eslint ./src",
     "ci:test": "jest --ci",
     "ci:lighthouse": "lhci autorun"
   },
